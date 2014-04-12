@@ -9,6 +9,6 @@
 
 (om/root
   (fn [app owner]
-    (dom/h1 nil (:text app)))
+    (dom/h1 nil (:couch-url app)))
   app-state
   {:target (. js/document (getElementById "top"))})
