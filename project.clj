@@ -3,7 +3,8 @@
   :url "https://github.com/ikr/translator-admin"
 
   :dependencies [[org.clojure/clojure "1.5.1"]
-                 [org.clojure/clojurescript "0.0-2138"]]
+                 [org.clojure/clojurescript "0.0-2138"]
+                 [om "0.5.0"]]
 
   :plugins [[lein-cljsbuild "1.0.2"]]
 
