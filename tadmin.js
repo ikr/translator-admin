@@ -1,3 +1,5 @@
 goog.addDependency("base.js", ['goog'], []);
 goog.addDependency("../cljs/core.js", ['cljs.core'], ['goog.string', 'goog.array', 'goog.object', 'goog.string.StringBuffer']);
-goog.addDependency("../tadmin/core.js", ['tadmin.core'], ['cljs.core']);
+goog.addDependency("../om/dom.js", ['om.dom'], ['cljs.core']);
+goog.addDependency("../om/core.js", ['om.core'], ['cljs.core', 'om.dom']);
+goog.addDependency("../tadmin/core.js", ['tadmin.core'], ['cljs.core', 'om.core', 'om.dom']);
