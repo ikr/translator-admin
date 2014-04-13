@@ -5,10 +5,10 @@
 (enable-console-print!)
 
 (def app-state
-  (atom {:couch-url "/couchdb"}))
+  (atom {:couch-url "/couchdb/"}))
 
 (om/root
   (fn [app owner]
-    (dom/h1 nil (:couch-url app)))
+    (dom/input #js {:type "text" :value (:couch-url app)}))
   app-state
   {:target (. js/document (getElementById "top"))})
